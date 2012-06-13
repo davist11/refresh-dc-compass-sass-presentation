@@ -18,16 +18,16 @@
 * Rails project vs standalone
 
 ### For a standalone project
-* compass create <myproject> OR
-* create a config.rb file manually with the necessary paths for your project
+compass create <myproject> OR
+create a config.rb file manually with the necessary paths for your project
 
 	http_path = "/"
 	css_dir = "stylesheets/"
 	sass_dir = "compile/sass"
 
-* create a sass or scss file in your sass_dir.
-* compass watch on the command line
-* add CSS to this file, and it will auto generate a CSS file in your css_dir
+create a sass or scss file in your sass_dir.
+compass watch on the command line
+add CSS to this file, and it will auto generate a CSS file in your css_dir
 
 
 
@@ -90,7 +90,7 @@ Example with too many selectors
 
 
 ### Parent references
-* The & becomes the selector
+The & becomes the selector
 
 	/* scss */
 	a {
@@ -164,7 +164,6 @@ You can use it in the property and selector too (interpolation)
 
 
 ### Operations
-
 The standard math operations (+, -, *, /, and %) are supported for numbers, even those with units. For colors, there are all sorts of useful functions for changing the lightness, hue, saturation, and more.
 
 	/* scss */
