@@ -18,16 +18,16 @@
 * Rails project vs standalone
 
 ### For a standalone project
-compass create <myproject> OR
-create a config.rb file manually with the necessary paths for your project
+* compass create <myproject> OR
+* create a config.rb file manually with the necessary paths for your project
 
-	http_path = "/"
-	css_dir = "stylesheets/"
-	sass_dir = "compile/sass"
+		http_path = "/"
+		css_dir = "stylesheets/"
+		sass_dir = "compile/sass"
 
-create a sass or scss file in your sass_dir.
-compass watch on the command line
-add CSS to this file, and it will auto generate a CSS file in your css_dir
+* create a sass or scss file in your sass_dir.
+* compass watch on the command line
+* add CSS to this file, and it will auto generate a CSS file in your css_dir
 
 
 
@@ -280,6 +280,7 @@ You can also pass parameters
 	}
 
 You can even include child selectors
+
 	/* scss */
 	@mixin shadowed() {
 		overflow: hidden;
@@ -502,12 +503,14 @@ You can break your CSS into multiple files, and Sass will combine into a single 
 
 
 ## Compass Features
-Compass basically gives you a whole bunch of prebuilt mixins to use.
+* Compass basically gives you a whole bunch of prebuilt mixins to use.
+* Import all of the CSS3 mixins
 
-Import all of the CSS3 mixins
-	@import "compass/css3";
+		@import "compass/css3";
 
-Then you can use those mixins just like you would any other mixin
+* Then you can use those mixins just like you would any other mixin
+
+<!— end —>
 
 	/* scss */
 	.rounded-box {
