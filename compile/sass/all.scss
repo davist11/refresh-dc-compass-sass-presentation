@@ -1,0 +1,257 @@
+// Nesting
+.nav {
+	background: #00;
+
+	li {
+		float: left;
+	}
+
+	a {
+		color: #fff;
+	}
+}
+
+
+.nav {
+	ul {
+		li {
+			a {
+				span {
+					color: #fff
+				}
+			}
+		}
+	}
+}
+
+
+
+
+// Parent selector
+a {
+	color: red;
+	
+	&:hover {
+		color: blue;
+		text-decoration: underline;
+	}
+}
+
+
+img {
+	display: block;
+	
+	.lte7 & {
+		-ms-interpolation-mode: bicubic;
+	}
+}
+
+
+
+
+// Variables
+$linkColor: #ce4dd6;
+
+a {
+	color: $linkColor;
+}
+
+
+$side: top;
+
+.bordered-#{$side} {
+	border-#{$side}: 1px solid green;
+}
+
+
+
+
+// Operations
+$col: 100px;
+
+.main {
+	width: $col * 6;
+}
+
+
+.box {
+	background: rgba(#000, 0.5);
+}
+
+
+a {
+	color: #000;
+	
+	&:hover {
+		color: lighten(#000, 0.75);
+	}
+}
+
+
+
+
+// Mixins
+@mixin box-highlight() {
+	background: green;
+	border: 1px solid red;
+	padding: 20px;
+	width: 100%;
+}
+
+.call-out {
+	@include box-highlight();
+	color: yellow;
+}
+
+.special-box {
+	@include box-highlight();
+}
+
+
+@mixin section($background: #000, $color: #fff, $radius: 10px) {
+	background: $background;
+	border-radius: $radius;
+	color: $color;
+	padding: 20px;
+}
+
+.section-1 {
+	@include section();
+}
+
+.section-2 {
+	@include section(#cecece, #000, 5px);
+}
+
+
+@mixin shadowed() {
+	overflow: hidden;
+	position: relative;
+	
+	h2 {
+		font-size: 36px;
+	}
+	
+	&:before {
+		box-shadow: 0 0 10px rgba(#000, 0.5);
+		content: "";
+		height: 20px;
+		left: 10px;
+		position: absolute;
+		right: 10px;
+		top: -20px;
+	}
+}
+
+.section {
+	@include shadowed();
+}
+
+
+@mixin respond-to($media) {
+	@if $media ==  small-and-under {
+		@media only screen and (max-width: 479px) { @content; }
+	}
+	@else if $media == medium {
+		@media only screen and (min-width: 480px) and (max-width: 767px) { @content; }
+	}
+	@else if $media == full {
+		@media only screen and (min-width: 1000px) { @content; }
+	}
+}
+
+.some-thing {
+	width: 800px;
+	
+	@include respond-to(medium) {
+		width: 100%;
+	}
+}
+
+
+
+
+// Extends
+.box-highlight {
+	background: green;
+	border: 1px solid red;
+	padding: 20px;
+	width: 100%;
+}
+
+.highlight {
+	@extend .box-highlight;
+	color: yellow;
+}
+
+.another-highlight {
+	@extend .box-highlight;
+}
+
+
+%font-georgia {
+	color: #666;
+	font-family: Georgia;
+	font-style: italic;
+}
+
+.heading {
+	@extend %font-georgia;
+}
+
+.footnote {
+	@extend %font-georgia;
+}
+
+
+
+
+// Loops
+$gutter: 20px;
+
+@for $i from 1 through 5 {
+	.span-#{$i} {
+		width: ($i * $col) + ($gutter * ($i - 1));
+	}
+}
+
+
+@each $service in twitter, facebook, linkedin, flickr {
+	.#{$service} {
+		background-image: url(/images/icons/#{$service}.png);
+	}
+}
+
+
+
+
+// Imports
+@import "forms";
+@import "buttons";
+
+
+
+
+// Compass
+@import "compass/css3";
+
+.rounded-box {
+	@include border-radius(10px);
+}
+
+.gradient {
+	@include background-image(linear-gradient(#fff, #ccc));
+}
+
+
+
+
+// Spriting
+$icons-spacing: 20px;
+@import "icons/*.png";
+
+@each $service in twitter, facebook, linkedin, flickr {
+	.#{$service} {
+		@include icons-sprite(#{$service});
+	}
+}
