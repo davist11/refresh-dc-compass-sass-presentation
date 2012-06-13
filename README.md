@@ -510,7 +510,7 @@ You can break your CSS into multiple files, and Sass will combine into a single 
 
 * Then you can use those mixins just like you would any other mixin
 
-<!— end —>
+Example:
 
 	/* scss */
 	.rounded-box {
