@@ -250,3 +250,23 @@ button {
 .flickr {
   background-position: 0 -149px;
 }
+
+/* line 260, ../compile/sass/all.scss */
+.twitter {
+  background-position: 10px -65px;
+}
+
+/* line 260, ../compile/sass/all.scss */
+.facebook {
+  background-position: 10px -213px;
+}
+
+/* line 260, ../compile/sass/all.scss */
+.linkedin {
+  background-position: 10px 10px;
+}
+
+/* line 260, ../compile/sass/all.scss */
+.flickr {
+  background-position: 10px -139px;
+}

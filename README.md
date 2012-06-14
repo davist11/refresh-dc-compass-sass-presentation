@@ -510,7 +510,7 @@ You can break your CSS into multiple files, and Sass will combine into a single 
 
 * Then you can use those mixins just like you would any other mixin
 
-### Pre-built mixins
+### Built-in mixins
 
 	/* scss */
 	.rounded-box {
@@ -580,3 +580,28 @@ Compass can automatically combine images and create sprites. It's pretty amazing
 	  background-position: 0 -149px;
 	}
 
+If you need to adjust the background-position
+
+	/* scss */
+	@each $service in twitter, facebook, linkedin, flickr {
+		.#{$service} {
+			@include icons-sprite(#{$service}, $offset-x: 10px, $offset-y: 10px);
+		}
+	}
+	
+	/* css */
+	.twitter {
+	  background-position: 10px -65px;
+	}
+
+	.facebook {
+	  background-position: 10px -213px;
+	}
+
+	.linkedin {
+	  background-position: 10px 10px;
+	}
+
+	.flickr {
+	  background-position: 10px -139px;
+	}

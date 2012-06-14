@@ -255,3 +255,9 @@ $icons-spacing: 20px;
 		@include icons-sprite(#{$service});
 	}
 }
+
+@each $service in twitter, facebook, linkedin, flickr {
+	.#{$service} {
+		@include icons-sprite(#{$service}, $offset-x: 10px, $offset-y: 10px);
+	}
+}
