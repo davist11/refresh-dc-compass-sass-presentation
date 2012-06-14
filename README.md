@@ -1,4 +1,4 @@
-# Sass & Compass
+# Sass & Compass: Never Write Regular CSS Again
 
 ## What are they
 * Ruby gems
@@ -510,7 +510,7 @@ You can break your CSS into multiple files, and Sass will combine into a single 
 
 * Then you can use those mixins just like you would any other mixin
 
-Example:
+### Pre-built mixins
 
 	/* scss */
 	.rounded-box {
