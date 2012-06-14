@@ -44,7 +44,7 @@ I used to hate nesting, but I have learned to love it. It's not something you HA
 
 	/* scss */
 	.nav {
-		background: #00;
+		background: #000;
 
 		li {
 			float: left;
@@ -57,13 +57,13 @@ I used to hate nesting, but I have learned to love it. It's not something you HA
 
 	/* css */
 	.nav {
-	  background: #00;
+		background: #000;
 	}
 	.nav li {
-	  float: left;
+		float: left;
 	}
 	.nav a {
-	  color: #fff;
+		color: #fff;
 	}
 
 
@@ -84,7 +84,7 @@ Example with too many selectors
 	
 	/* css */
 	.nav ul li a span {
-	  color: white;
+		color: white;
 	}
 
 
@@ -104,11 +104,11 @@ The & becomes the selector
 
 	/* css */
 	a {
-	  color: red;
+		color: red;
 	}
 	a:hover {
-	  color: blue;
-	  text-decoration: underline;
+		color: blue;
+		text-decoration: underline;
 	}
 
 
@@ -123,10 +123,10 @@ The & becomes the selector
 
 	/* css */
 	img {
-	  display: block;
+		display: block;
 	}
 	.lte7 img {
-	  -ms-interpolation-mode: bicubic;
+		-ms-interpolation-mode: bicubic;
 	}
 
 
@@ -144,7 +144,7 @@ Variables are exactly what you have always wanted out of variables in CSS
 
 	/* css */
 	a {
-		color: #ce4dd6
+		color: #ce4dd6;
 	}
 
 You can use it in the property and selector too (interpolation)
@@ -158,7 +158,7 @@ You can use it in the property and selector too (interpolation)
 	
 	/* css */
 	.bordered-top {
-	  border-top: 1px solid green;
+		border-top: 1px solid green;
 	}
 
 
@@ -175,7 +175,7 @@ The standard math operations (+, -, *, /, and %) are supported for numbers, even
 	
 	/* css */
 	.main {
-	  width: 600px;
+		width: 600px;
 	}
 	
 	
@@ -186,7 +186,7 @@ The standard math operations (+, -, *, /, and %) are supported for numbers, even
 	
 	/* css */
 	.box {
-	  background: rgba(0, 0, 0, 0.5);
+		background: rgba(0, 0, 0, 0.5);
 	}
 	
 	
@@ -201,11 +201,11 @@ The standard math operations (+, -, *, /, and %) are supported for numbers, even
 	
 	/* css */
 	a {
-	  color: #000;
+		color: #000;
 	}
 
 	a:hover {
-	  color: #020202;
+		color: #020202;
 	}
 
 
@@ -232,18 +232,18 @@ Reuse styles without having to duplicate. Make your code DRY.
 	
 	/* css */
 	.call-out {
-	  background: green;
-	  border: 1px solid red;
-	  padding: 20px;
-	  width: 100%;
-	  color: yellow;
+		background: green;
+		border: 1px solid red;
+		padding: 20px;
+		width: 100%;
+		color: yellow;
 	}
 
 	.special-box {
-	  background: green;
-	  border: 1px solid red;
-	  padding: 20px;
-	  width: 100%;
+		background: green;
+		border: 1px solid red;
+		padding: 20px;
+		width: 100%;
 	}
 	
 You can also pass parameters
@@ -266,17 +266,17 @@ You can also pass parameters
 	
 	/* css */
 	.section-1 {
-	  background: black;
-	  border-radius: 10px;
-	  color: white;
-	  padding: 20px;
+		background: black;
+		border-radius: 10px;
+		color: white;
+		padding: 20px;
 	}
 
 	.section-2 {
-	  background: #cecece;
-	  border-radius: 5px;
-	  color: black;
-	  padding: 20px;
+		background: #cecece;
+		border-radius: 5px;
+		color: black;
+		padding: 20px;
 	}
 
 You can even include child selectors
@@ -307,22 +307,22 @@ You can even include child selectors
 	
 	/* css */
 	.section {
-	  overflow: hidden;
-	  position: relative;
+		overflow: hidden;
+		position: relative;
 	}
 
 	.section h2 {
-	  font-size: 36px;
+		font-size: 36px;
 	}
 
 	.section:before {
-	  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-	  content: "";
-	  height: 20px;
-	  left: 10px;
-	  position: absolute;
-	  right: 10px;
-	  top: -20px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		content: "";
+		height: 20px;
+		left: 10px;
+		position: absolute;
+		right: 10px;
+		top: -20px;
 	}
 
 
@@ -351,12 +351,12 @@ In newer versions of Sass, you can do content block mixins
 	
 	/* css */
 	.some-thing {
-	  width: 800px;
+		width: 800px;
 	}
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
-	  .some-thing {
-	    width: 100%;
-	  }
+		.some-thing {
+	  		width: 100%;
+		}
 	}
 
 
@@ -382,14 +382,14 @@ Kinda like mixins, but kinda not. Sort of a replacement for mixins with no param
 	
 	/* css */
 	.box-highlight, .highlight, .another-highlight {
-	  background: green;
-	  border: 1px solid red;
-	  padding: 20px;
-	  width: 100%;
+		background: green;
+		border: 1px solid red;
+		padding: 20px;
+		width: 100%;
 	}
 
 	.highlight {
-	  color: yellow;
+		color: yellow;
 	}
 
 In newer versions of Sass, you can also use "silent" extends so the initial base class doesn't end up in your CSS.
@@ -411,9 +411,9 @@ In newer versions of Sass, you can also use "silent" extends so the initial base
 	
 	/* css */
 	.heading, .footnote {
-	  color: #666;
-	  font-family: Georgia;
-	  font-style: italic;
+		color: #666;
+		font-family: Georgia;
+		font-style: italic;
 	}
 
 
@@ -433,23 +433,23 @@ For loop
 	
 	/* css */
 	.span-1 {
-	  width: 100px;
+		width: 100px;
 	}
 
 	.span-2 {
-	  width: 220px;
+		width: 220px;
 	}
 
 	.span-3 {
-	  width: 340px;
+		width: 340px;
 	}
 
 	.span-4 {
-	  width: 460px;
+		width: 460px;
 	}
 
 	.span-5 {
-	  width: 580px;
+		width: 580px;
 	}
 
 
@@ -464,19 +464,19 @@ Each loop
 
 	/* css */
 	.twitter {
-	  background-image: url(/images/icons/twitter.png);
+		background-image: url(/images/icons/twitter.png);
 	}
 
 	.facebook {
-	  background-image: url(/images/icons/facebook.png);
+		background-image: url(/images/icons/facebook.png);
 	}
 
 	.linkedin {
-	  background-image: url(/images/icons/linkedin.png);
+		background-image: url(/images/icons/linkedin.png);
 	}
 
 	.flickr {
-	  background-image: url(/images/icons/flickr.png);
+		background-image: url(/images/icons/flickr.png);
 	}
 
 
@@ -490,15 +490,15 @@ You can break your CSS into multiple files, and Sass will combine into a single 
 	
 	/* css */
 	input {
-	  background: #dedede;
-	  border: 1px solid #000;
+		background: #dedede;
+		border: 1px solid #000;
 	}
 
 	button {
-	  background: #000;
-	  color: #fff;
-	  padding: 5px 10px;
-	  text-transform: uppercase;
+		background: #000;
+		color: #fff;
+		padding: 5px 10px;
+		text-transform: uppercase;
 	}
 
 
@@ -519,11 +519,11 @@ You can break your CSS into multiple files, and Sass will combine into a single 
 	
 	/* css */
 	.rounded-box {
-	  -webkit-border-radius: 10px;
-	  -moz-border-radius: 10px;
-	  -ms-border-radius: 10px;
-	  -o-border-radius: 10px;
-	  border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-ms-border-radius: 10px;
+		-o-border-radius: 10px;
+		border-radius: 10px;
 	}
 	
 Gradients become sooooo simplified
@@ -535,12 +535,12 @@ Gradients become sooooo simplified
 	
 	/* css */
 	.gradient {
-	  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #cccccc));
-	  background-image: -webkit-linear-gradient(#ffffff, #cccccc);
-	  background-image: -moz-linear-gradient(#ffffff, #cccccc);
-	  background-image: -o-linear-gradient(#ffffff, #cccccc);
-	  background-image: -ms-linear-gradient(#ffffff, #cccccc);
-	  background-image: linear-gradient(#ffffff, #cccccc);
+		background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #cccccc));
+		background-image: -webkit-linear-gradient(#ffffff, #cccccc);
+		background-image: -moz-linear-gradient(#ffffff, #cccccc);
+		background-image: -o-linear-gradient(#ffffff, #cccccc);
+		background-image: -ms-linear-gradient(#ffffff, #cccccc);
+		background-image: linear-gradient(#ffffff, #cccccc);
 	}
 	
 Tons more: http://compass-style.org/reference/compass/css3/
@@ -561,23 +561,23 @@ Compass can automatically combine images and create sprites. It's pretty amazing
 	
 	/* css */
 	.icons-sprite, .twitter, .facebook, .linkedin, .flickr {
-	  background: url('/images/icons-s589c2b097f.png') no-repeat;
+		background: url('/images/icons-s589c2b097f.png') no-repeat;
 	}
 
 	.twitter {
-	  background-position: 0 -75px;
+		background-position: 0 -75px;
 	}
 
 	.facebook {
-	  background-position: 0 -223px;
+		background-position: 0 -223px;
 	}
 
 	.linkedin {
-	  background-position: 0 0;
+		background-position: 0 0;
 	}
 
 	.flickr {
-	  background-position: 0 -149px;
+		background-position: 0 -149px;
 	}
 
 If you need to adjust the background-position
@@ -591,17 +591,17 @@ If you need to adjust the background-position
 	
 	/* css */
 	.twitter {
-	  background-position: 10px -65px;
+		background-position: 10px -65px;
 	}
 
 	.facebook {
-	  background-position: 10px -213px;
+		background-position: 10px -213px;
 	}
 
 	.linkedin {
-	  background-position: 10px 10px;
+		background-position: 10px 10px;
 	}
 
 	.flickr {
-	  background-position: 10px -139px;
+		background-position: 10px -139px;
 	}
