@@ -5,7 +5,7 @@
 * CSS preprocessors
 * Generates normal CSS files
 
-## What they do and how they work
+### How do they work
 * "Watch" a file/folder
 * If anything changes in the file/folder, regenerates new CSS
 
