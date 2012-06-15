@@ -24,6 +24,7 @@
 		http_path = "/"
 		css_dir = "stylesheets/"
 		sass_dir = "compile/sass"
+		images_dir = "images/"
 
 * create a sass or scss file in your sass_dir.
 * compass watch on the command line
@@ -125,6 +126,7 @@ The & becomes the selector
 	img {
 		display: block;
 	}
+	
 	.lte7 img {
 		-ms-interpolation-mode: bicubic;
 	}
@@ -353,6 +355,7 @@ In newer versions of Sass, you can do content block mixins
 	.some-thing {
 		width: 800px;
 	}
+	
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
 		.some-thing {
 	  		width: 100%;
