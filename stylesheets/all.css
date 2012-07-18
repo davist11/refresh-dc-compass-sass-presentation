@@ -61,7 +61,7 @@ a {
 }
 /* line 85, ../compile/sass/all.scss */
 a:hover {
-  color: #020202;
+  color: #4d4d4d;
 }
 
 /* line 101, ../compile/sass/all.scss */
@@ -148,47 +148,52 @@ a:hover {
   font-style: italic;
 }
 
-/* line 213, ../compile/sass/all.scss */
+/* line 202, ../compile/sass/all.scss */
+.footnote {
+  font-style: normal;
+}
+
+/* line 214, ../compile/sass/all.scss */
 .span-1 {
   width: 100px;
 }
 
-/* line 213, ../compile/sass/all.scss */
+/* line 214, ../compile/sass/all.scss */
 .span-2 {
   width: 220px;
 }
 
-/* line 213, ../compile/sass/all.scss */
+/* line 214, ../compile/sass/all.scss */
 .span-3 {
   width: 340px;
 }
 
-/* line 213, ../compile/sass/all.scss */
+/* line 214, ../compile/sass/all.scss */
 .span-4 {
   width: 460px;
 }
 
-/* line 213, ../compile/sass/all.scss */
+/* line 214, ../compile/sass/all.scss */
 .span-5 {
   width: 580px;
 }
 
-/* line 220, ../compile/sass/all.scss */
+/* line 221, ../compile/sass/all.scss */
 .twitter {
   background-image: url(/images/icons/twitter.png);
 }
 
-/* line 220, ../compile/sass/all.scss */
+/* line 221, ../compile/sass/all.scss */
 .facebook {
   background-image: url(/images/icons/facebook.png);
 }
 
-/* line 220, ../compile/sass/all.scss */
+/* line 221, ../compile/sass/all.scss */
 .linkedin {
   background-image: url(/images/icons/linkedin.png);
 }
 
-/* line 220, ../compile/sass/all.scss */
+/* line 221, ../compile/sass/all.scss */
 .flickr {
   background-image: url(/images/icons/flickr.png);
 }
@@ -207,7 +212,7 @@ button {
   text-transform: uppercase;
 }
 
-/* line 238, ../compile/sass/all.scss */
+/* line 239, ../compile/sass/all.scss */
 .rounded-box {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -216,7 +221,7 @@ button {
   border-radius: 10px;
 }
 
-/* line 242, ../compile/sass/all.scss */
+/* line 243, ../compile/sass/all.scss */
 .gradient {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #cccccc));
   background-image: -webkit-linear-gradient(#ffffff, #cccccc);
@@ -226,47 +231,82 @@ button {
   background-image: linear-gradient(#ffffff, #cccccc);
 }
 
+/* line 247, ../compile/sass/all.scss */
+.rotate-me {
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+/* line 251, ../compile/sass/all.scss */
+.three-columns {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  -o-column-count: 3;
+  column-count: 3;
+  -webkit-column-rule: 1px dotted black;
+  -moz-column-rule: 1px dotted black;
+  -o-column-rule: 1px dotted black;
+  column-rule: 1px dotted black;
+}
+
+/* line 256, ../compile/sass/all.scss */
+.transition-me {
+  background: red;
+  -webkit-transition: background 0.5s ease-in-out;
+  -moz-transition: background 0.5s ease-in-out;
+  -ms-transition: background 0.5s ease-in-out;
+  -o-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
+}
+/* line 260, ../compile/sass/all.scss */
+.transition-me:hover {
+  background: green;
+}
+
 /* line 66, icons/*.png */
 .icons-sprite, .twitter, .facebook, .linkedin, .flickr {
   background: url('/images/icons-s589c2b097f.png') no-repeat;
 }
 
-/* line 254, ../compile/sass/all.scss */
+/* line 272, ../compile/sass/all.scss */
 .twitter {
   background-position: 0 -75px;
 }
 
-/* line 254, ../compile/sass/all.scss */
+/* line 272, ../compile/sass/all.scss */
 .facebook {
   background-position: 0 -223px;
 }
 
-/* line 254, ../compile/sass/all.scss */
+/* line 272, ../compile/sass/all.scss */
 .linkedin {
   background-position: 0 0;
 }
 
-/* line 254, ../compile/sass/all.scss */
+/* line 272, ../compile/sass/all.scss */
 .flickr {
   background-position: 0 -149px;
 }
 
-/* line 260, ../compile/sass/all.scss */
+/* line 278, ../compile/sass/all.scss */
 .twitter {
   background-position: 10px -65px;
 }
 
-/* line 260, ../compile/sass/all.scss */
+/* line 278, ../compile/sass/all.scss */
 .facebook {
   background-position: 10px -213px;
 }
 
-/* line 260, ../compile/sass/all.scss */
+/* line 278, ../compile/sass/all.scss */
 .linkedin {
   background-position: 10px 10px;
 }
 
-/* line 260, ../compile/sass/all.scss */
+/* line 278, ../compile/sass/all.scss */
 .flickr {
   background-position: 10px -139px;
 }

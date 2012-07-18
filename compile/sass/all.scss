@@ -83,7 +83,7 @@ a {
 	color: #000;
 	
 	&:hover {
-		color: lighten(#000, 0.75);
+		color: lighten(#000, 30%);
 	}
 }
 
@@ -201,6 +201,7 @@ a {
 
 .footnote {
 	@extend %font-georgia;
+	font-style: normal;
 }
 
 
@@ -243,6 +244,23 @@ $gutter: 20px;
 	@include background-image(linear-gradient(#fff, #ccc));
 }
 
+.rotate-me {
+	@include rotate(30deg);
+}
+
+.three-columns {
+	@include column-count(3);
+	@include column-rule(1px dotted #000);
+}
+
+.transition-me {
+	background: red;
+	@include transition(background 0.5s ease-in-out);
+	
+	&:hover {
+		background: green;
+	}
+}
 
 
 

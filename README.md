@@ -197,7 +197,7 @@ The standard math operations (+, -, *, /, and %) are supported for numbers, even
 		color: #000;
 
 		&:hover {
-			color: lighten(#000, 0.75);
+			color: lighten(#000, 30%);
 		}
 	}
 	
@@ -207,7 +207,7 @@ The standard math operations (+, -, *, /, and %) are supported for numbers, even
 	}
 
 	a:hover {
-		color: #020202;
+		color: #4d4d4d;
 	}
 
 
@@ -410,6 +410,7 @@ In newer versions of Sass, you can also use "silent" extends so the initial base
 
 	.footnote {
 		@extend %font-georgia;
+		font-style: normal;
 	}
 	
 	/* css */
@@ -418,7 +419,10 @@ In newer versions of Sass, you can also use "silent" extends so the initial base
 		font-family: Georgia;
 		font-style: italic;
 	}
-
+	
+	.footnote {
+	  font-style: normal;
+	}
 
 
 ### Loops
